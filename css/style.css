@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .navbar .horns {
@@ -54,7 +55,7 @@ body {
 
 .hero {
   width: 100%;
-  height: 83vh;
+  height: 67vh;
   background-image: url(../images/volvogold.jpg);
   background-position: 50% 50%;
   background-color: black;
@@ -62,14 +63,158 @@ body {
 }
 
 .tagline {
-  margin: 0;
-  position: absolute;
-  bottom: 2rem;
-  padding: 0 4rem;
-  color: var(--primary-color);
-  font-size: 10rem;
-  text-shadow: 5px 5px 1px #fff;
-  width: 80%;
   background-color: #000;
+  bottom: 2rem;
+  color: var(--primary-color);
+  font-size: 6rem;
+  line-height: 6rem;
+  margin: 0;
   opacity: 0.8;
+  padding: 2rem 2rem;
+  position: absolute;
+  text-shadow: 3px 3px 1px #fff;
+  user-select: none;
+  width: 85%;
+}
+
+.mission {
+  font-size: 3rem;
+}
+
+.content {
+  padding: 0 2rem;
+  color: #333;
+}
+
+.content p {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+.content .heading {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #000;
+}
+
+.accent-bar {
+  background-color: var(--primary-color);
+  width: 40px;
+  height: 5px;
+  display: inline-block;
+}
+
+.instagram {
+  display: block;
+  border: 2px #ccc solid;
+  margin: 6rem;
+}
+
+/* Forms */
+.form {
+  padding: 0 6rem;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+}
+input {
+  display: block;
+  width: 80vw;
+  height: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: 3px solid #ccc;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border: 3px solid var(--primary-color);
+}
+
+textarea {
+  display: block;
+  width: 80vw;
+  height: 10rem;
+  border-radius: 5px;
+  border: 3px solid #ccc;
+  outline: none;
+  transition: border 0.2s;
+}
+textarea:focus {
+  border: 3px solid var(--primary-color);
+}
+
+label {
+  font-size: 2rem;
+}
+
+.send {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  border: none;
+  background: var(--primary-color);
+  padding: 1rem 2rem;
+  font-weight: 900;
+}
+
+/* Phone */
+
+.phone {
+  display: flex;
+  justify-content: center;
+}
+
+.phone h4 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 0 2rem;
+    display: flex;
+  }
+  .content__block {
+    margin: 0 4rem;
+    width: 50%;
+  }
+  .content p {
+    font-weight: 300;
+  }
+  .hero {
+    width: 100%;
+    height: 86vh;
+    background-image: url(../images/volvogold.jpg);
+    background-position: 50% 50%;
+    background-color: black;
+    position: relative;
+  }
+  .tagline {
+    background-color: #000;
+    bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 10rem;
+    line-height: 11rem;
+    margin: 0;
+    opacity: 0.8;
+    padding: 0 4rem;
+    position: absolute;
+    text-shadow: 5px 5px 1px #fff;
+  }
+
+  .phone {
+    display: flex;
+    justify-content: center;
+  }
+
+  .phone h4 {
+    font-size: 10rem;
+    margin: 0;
+    font-weight: 900;
+  }
 }
