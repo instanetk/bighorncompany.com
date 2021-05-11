@@ -1,0 +1,24 @@
+{
+  "name": "bighorncompany.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instanetk/bighorncompany.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/instanetk/bighorncompany/issues"
+  },
+  "homepage": "https://github.com/instanetk/bighorncompany#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.2",
+    "postcss": "^8.2.15"
+  }
+}
