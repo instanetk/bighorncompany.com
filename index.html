@@ -12,6 +12,8 @@
     <link rel="icon" type="image/svg+xml" href="images/horns.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -22,15 +24,15 @@
         </nav>
         <main>
             <header class="hero">
-                <h2 class="tagline">A family owned and operated trucking services company</h2>
+                <h2 class="tagline">A family owned and operated trucking company</h2>
             </header>
             <section class="content">
-                <div class="content__block">
+                <div class="content__block" data-aos="fade-up">
                     <h3 class="heading">Mission</h3>
                     <span class="accent-bar"></span>
                     <p class="mission">Our mission is to deliver transportation services with the highest expectations through each and every mile. The road is long, let us take you there...</p>
                 </div>
-                <div class="content__block">
+                <div class="content__block" data-aos="fade-left">
                     <h3 class="heading">Vision</h3>
                     <span class="accent-bar"></span>
                     <p class="mission">Now servicing the southeastern United States, we are committed to being partners of excellence, reliability and trust. </p>
@@ -42,7 +44,7 @@
                     <span class="accent-bar"></span>
                 </div>
             </section>
-            <div class="instagram">
+            <div class="instagram" data-aos="zoom-in">
                 <!-- LightWidget WIDGET -->
                 <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
                 <iframe src="https://cdn.lightwidget.com/widgets/eb55e5a4715350a8b3c04a04d44e5995.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
@@ -64,6 +66,10 @@
                         <input type="email" name="email" />
                     </label>
                     <label>
+                        Phone
+                        <input type="phone" name="phone" />
+                    </label>
+                    <label>
                         Message
                         <textarea name="message"></textarea>
                     </label>
@@ -75,6 +81,10 @@
             </div>
         </main>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
